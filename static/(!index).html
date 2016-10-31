@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="format-detection" content="telephone=no">
+    <!--禁用手机号码链接(for iPhone)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!--自适应设备宽度-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--控制全屏时顶部状态栏的外，默认白色-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--是否允许全屏显，只有在桌面启动时可用-->
+
+    <title>通用web解决方案（Demo）</title>
+    <link rel="stylesheet" href="css/(!index).css">
+
+</head>
+<body>
+
+
+<section class="body">
+<ul class="uc-switch">
+    <li class="on">标签一</li>
+    <li>标签二</li>
+</ul>
+
+<div class="switch switch-item" id="item1">
+    <div>
+        <button data-click2="alert">警告框</button>
+        <button data-click2="prompt">确认框</button>
+        <button data-click2="password">密码框</button>
+    </div>
+</div>
+<div class="switch switch-item hide" id="item2">
+    <table class="plugin-login">
+        <caption>各种方法</caption>
+        <tbody>
+            <tr>
+                <td>StringUtil</td>
+                <td id="string"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button data-click="loaddata1">点击加载数据</button>
+    <div id="loaddata1">
+
+    </div>
+
+</div>
+</section>
+
+
+
+<!-- script plugin load start -->
+<script type="text/javascript" src="libs/sea.js"></script>
+<script type="text/javascript" src="libs/seajs-preload.js"></script>
+<script type="text/javascript" src="libs/seajs-text.js"></script>
+
+<script type="text/javascript" src="libs/sea-config.js"></script>
+<script type="text/javascript">
+    seajs.use(["./js/(!index)"]);
+</script>
+<!-- script plugin load end -->
+
+</body>
+</html>

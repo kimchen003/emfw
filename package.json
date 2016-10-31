@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "emfw",
+        "scope": null,
+        "escapedName": "emfw",
+        "name": "emfw",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\xampp\\htdocs\\playstation\\test\\aa"
+    ],
+    [
+      {
+        "raw": "emfw@^1.0.5",
+        "scope": null,
+        "escapedName": "emfw",
+        "name": "emfw",
+        "rawSpec": "^1.0.5",
+        "spec": ">=1.0.5 <2.0.0",
+        "type": "range"
+      },
+      "D:\\xampp\\htdocs\\allhtml5\\MobilePageTeam\\dev\\FundManager\\build"
+    ]
+  ],
+  "_from": "emfw@^1.0.5",
+  "_id": "emfw@1.0.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/emfw",
+  "_nodeVersion": "4.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/emfw-1.0.6.tgz_1473652538937_0.5572160275187343"
+  },
+  "_npmUser": {
+    "name": "kim233",
+    "email": "342473318@qq.com"
+  },
+  "_npmVersion": "3.10.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "emfw@^1.0.5",
+    "scope": null,
+    "escapedName": "emfw",
+    "name": "emfw",
+    "rawSpec": "^1.0.5",
+    "spec": ">=1.0.5 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/emfw/-/emfw-1.0.6.tgz",
+  "_shasum": "e51015f728e3730302213ad4426d9b29d7a0ed25",
+  "_shrinkwrap": null,
+  "_spec": "emfw@^1.0.5",
+  "_where": "D:\\xampp\\htdocs\\allhtml5\\MobilePageTeam\\dev\\FundManager\\build",
+  "author": {
+    "name": "kim233"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "chokidar": "^1.6.1",
+    "colors": "^1.1.2"
+  },
+  "description": "前端自动化集成框架",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "e51015f728e3730302213ad4426d9b29d7a0ed25",
+    "tarball": "https://registry.npmjs.org/emfw/-/emfw-1.0.6.tgz"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "kim233",
+      "email": "342473318@qq.com"
+    }
+  ],
+  "name": "emfw",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "bin": {
+    "emfw": "bin/emfw.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.0"
+}

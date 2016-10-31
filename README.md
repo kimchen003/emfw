@@ -10,7 +10,12 @@
 模块版本号               `emfw -v`<br/>
 帮助                     `emfw -h`<br/>
 ###项目打包及在线编译
-安装模块依赖 `npm install`
+安装模块依赖 `npm install`<br/>
+编译less `grunt less`<br/>
+在线编译 `grunt watch`<br/>
+合并压缩 `grunt`<br/>
 ###提示
 网络太慢建议使用淘宝镜像 `cnpm install`<br/>
 安装 : `npm install -g cnpm --registry=https://registry.npm.taobao.org`
+
+

@@ -1,0 +1,222 @@
+@import "../core/_variable.less";
+
+
+@charset "utf-8";
+
+/*window*/
+/* 默认的弹出框样式 */
+
+
+.UC-popupWrap{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 998;
+	display: none;
+
+	&.show{
+		display: block;
+	}
+
+	&>.popupBackdrop{
+		background: rgba(0,0,0,0);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+
+	    &.show{
+		    background: rgba(0,0,0,0.4);
+	    }
+	}
+
+	&>.popupInner{
+		width: 270px;
+		margin: 0 auto;
+		background: rgba(240,239,245,1);
+
+        position: relative;
+        top: 40%;
+        transform:translate(0, -50%);
+        border-radius: 10px;
+        overflow: hidden;
+
+        &>.popupHeader{
+            position: relative;
+            padding: 0 15px;
+
+            h4{
+                text-align: center;
+                font-size: 15px;
+                line-height: @sp4;
+                padding-top: @sp4;
+                color: @c6;
+                // border-bottom: @border-type;
+
+            }
+
+        }
+        &>.popupHeader + .popupContent{
+            padding-top: 12px;
+        }
+        &>.popupContent{
+            padding: @sp4 @sp5 @sp4;
+            font-size: @f2;
+            text-align: center;
+            line-height:1.4285;
+
+            .popupInput{
+                background: #fff;
+                border: @border-type;
+                border-radius: 5px;
+                padding: 3px 0;
+                margin-top: 10px;
+
+                label{
+                    height: 100px;
+                    background: blue;
+                    display: block;
+                }
+
+                input{
+                    width: 100%;
+                    border: none;
+                    text-indent: 10px;
+                    font-size: 15px;
+                    color: #999;
+                    line-height: 24px;
+                }
+            }
+
+            p{
+                line-height: 1.5;
+                font-size: @f2;
+                color: #000;
+
+                &.productName,
+                &.accountValue{
+                    color: #999;
+                    font-size: 14px;
+                }
+
+                span.digit{
+                    color: #f30;
+                    font-size: 16px;
+                    font-family: arial;
+                }
+            }
+
+        }
+
+        &>.popupButton{
+            display: flex;
+            border-top: @border-type;
+
+            &>a{
+                font-size: @f1;
+                &.actived{
+                    background: #ddd;
+                }
+            }
+
+
+            &>a{
+                flex:1;
+                line-height: @sp1;
+                text-align: center;
+                display: block;
+            }
+            &>a + a{
+                border-left: @border-type;
+            }
+            &>a[data-btn="no"]{
+                color: @c13;
+            }
+            &>a[data-btn="yes"]{
+                color: @c1;
+                &.nonactivated{
+                    color: @c8;
+                }
+            }
+        }
+	}
+
+
+    &>.bottomPopupInner{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: @f2;
+        transform:translate(0, 100%);
+
+        transition : transform 0.3s ease;
+
+        &.show{
+           transform:translate(0, 0);
+        }
+
+
+        &>.PopupHeader,
+        &>.PopupContent,
+        &>.popupButton{
+            background: rgba(240,239,245,1);
+        }
+        &>.PopupHeader{
+            padding: @sp4 @sp5;
+            text-align: center;
+            color: @c7;
+            border-bottom: @border-type;
+        }
+        &>.PopupContent{
+            max-height: 50vh;
+            overflow-y: hidden;
+            overflow-x: hidden;
+
+        }
+
+        &>.popupButton{
+            height: @sp1;
+            margin-top: 5px;
+
+            a{
+                font-size: 16px;
+                display: block;
+                line-height: @sp1;
+                text-align: center;
+                color: @c7;
+            }
+        }
+    }
+}
+
+
+
+.UC-tips{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform:translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    padding: 5px @sp5;
+    border-radius:3px;
+    min-width: 50px;
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+
+    &.show{
+        opacity: 1;
+    }
+
+    p{
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+    }
+}

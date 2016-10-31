@@ -1,0 +1,25 @@
+@import "core/_variable";
+@import "core/_reset";
+@import "extend/_head";
+@import "extend/_foot";
+@import "plugins/popup";
+
+body,header,section,footer,div,ul,li,div{margin:0;padding:0;font-size:14px;}
+.tac{text-align:center;}
+
+
+
+section{}
+section ul:after{display:block;content: " ";clear: both;}
+section li{display:inline;float:left;width:50%;border-bottom:1px solid #ccc;text-align:center;line-height:40px;}
+section li.on{border-bottom-color:#dc0000;color:#dc0000;}
+
+section div.switch{display:block;padding:0 20px;}
+section div.switch-item{ text-align: center;padding-top:20px;}
+section div.switch-item.hide{ display: none;}
+section div.switch table.plugin-login{width:100%;margin:20px auto 0;text-align:left;border:1px solid #ccc;}
+section div.switch table.plugin-login caption{height:40px;line-height: 40px;background-color:#2f5895;color:#fff;}
+section div.switch table.plugin-login th,switch table td{ height:40px;vertical-align:top; padding-top:5px;}
+section div.switch table.plugin-login th{text-align:center;padding:20px 6px 0 0;}
+section div.switch table.plugin-login input[type=text],section div.switch input[type=password]{padding:7px 0;border:1px solid #888;width:80%;}
+section div.switch table.plugin-login input[type=button]{ padding:6px 15px; margin-right:20px;}
